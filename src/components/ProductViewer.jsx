@@ -1,8 +1,10 @@
-
+import useMacBookStore from "../store";
 
 const ProductViewer = () =>{
+    const {color, scale, setColor, setScale} = useMacbokStore();
+
     return (
-        <section>
+        <section id='product-viewer'>
             <h2>Take a closer look.</h2>
 
             <div className="controls">
@@ -10,7 +12,9 @@ const ProductViewer = () =>{
 
                 <div className="flex-container gap-5 mt-5">
                     <div className='color-control'>
-                        <div className='bg-neutral-300'/>
+                        <div
+                        onClick={()=> setColor ('#adb5bd')}
+                        className={clsx('bg-neutral-300', color === '#adb5bd' && 'active' )} />
                         <div className='bg-neutral-900'/>
                     </div>
 
