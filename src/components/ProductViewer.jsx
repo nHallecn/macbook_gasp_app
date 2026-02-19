@@ -8,7 +8,7 @@ const ProductViewer = () =>{
             <h2>Take a closer look.</h2>
 
             <div className="controls">
-                <p className="info">MacBook 16 in Space Black </p>
+                <p className="info">MacBook 16 in {color} </p>
 
                 <div className="flex-container gap-5 mt-5">
                     <div className='color-control'>
