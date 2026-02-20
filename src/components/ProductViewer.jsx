@@ -5,6 +5,7 @@ import { OrbitControls } from "@react-three/drei";
 import MacbookModel14 from "./models/Macbook-14";
 import StudioLights from "./three/StudioLights";
 import ModelSwitcher from "./three/ModelSwitcher";
+import { useMediaQuery } from "react-responsive";
 
 const ProductViewer = () =>{
     const {color, scale, setColor, setScale} = useMacBookStore();
@@ -45,7 +46,7 @@ const ProductViewer = () =>{
             <Canvas id="canvas">
                 <StudioLights />
 
-                <MacbookModel14 scale={0.06} position={[0, 0, 0]}/>
+                
 
                 <ModelSwitcher scale={isMobile ? scale= -0.03 : scale} isMobile={isMobile}/>
             </Canvas>
