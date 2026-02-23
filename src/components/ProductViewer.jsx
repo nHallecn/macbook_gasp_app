@@ -17,7 +17,7 @@ const ProductViewer = () =>{
             <h2>Take a closer look.</h2>
 
             <div className="controls">
-                <p className="info">MacBook {scale} in {color} </p>
+                <p className="info">MacBook Pro | Available in 14" & 16"" in Space Gray</p>
 
                 <div className="flex-container gap-5 mt-5">
                     <div className='color-control'>
